@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid black;
+        }
+        img{
+            margin: 10px;
+        }
+        /* .img2{
+             gap not mantained
+            /* position: absolute;
+            top: 30px;  
+         }*/ 
+        .container{
+            /* gap mantained */
+            position: relative;
+            height: 2000px;            
+        }
+        .img3{
+            /* same as fixed position but limited to parent container */
+            position: sticky;
+            top: 100px;
+        }
+        .img4{
+            /* positon fixed no matter how much u scroll */
+            position: fixed;
+            top: 0px;
+        }
+        .box{
+            background-color: gray;
+            height: 5000px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img 
+         src="Red.jpg"
+         alt="red"
+         width="200px"
+         height="200px"
+         class="img1">
+         
+         <img 
+         src="Orange.jpg" 
+         alt="orange"
+         width="200px"
+         height="200px"
+         class="img2">
+
+         <img 
+         src="Pure_blue.jpeg" 
+         alt="Blue"
+         width="200px"
+         height="200px"
+         class="img3">
+
+         <img 
+         src="Green.jpg" 
+         alt="green"
+         width="200px"
+         height="200px"
+         class="img4">
+    </div>
+    <div class="box">
+        
+    </div>
+</body>
+</html>

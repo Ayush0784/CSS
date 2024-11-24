@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background: #332525;
+    display: grid;
+    gap:5rem;
+    padding: 3rem;
+    grid-template-rows: 4, 1fr;
+    grid-template-columns: 1, 1fr;
+
+}
+
+.item{
+    width: 150px;
+    height: 150px;
+    background-color: chartreuse;
+    border: 3px solid white;
+    border-radius: 10px;
+    /* justify-self: stretch;
+    align-self: end ; */
+    place-self: center;
+}

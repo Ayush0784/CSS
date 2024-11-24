@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color: brown; /*custom variable */
+        }
+        .container{
+            border: 2px solid black;
+            background-color: beige;
+            height: 700px;
+            padding: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box{
+            border: 2px solid black;
+            box-shadow: 6px 6px 5px 10px var(--primary-color);
+            /* box-shadow: inset 6px 5px 10px var(--primary-color);  */
+            width: 400px;
+            height: 400px;
+            padding: 6px;
+            margin: 6px;
+        }
+        img{
+            height: 100px;
+            width: 100px;
+        }
+        #text{
+            /* text-shadow: 2px 2px 2px var(--primary-color); */
+            text-shadow: 2px 2px blue, 3px 3px red;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="image.png">
+            <h2 id="text">Box and Shadow</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, consectetur! Cumque dolore a et ea, rem natus autem. Atque rerum laudantium repellendus temporibus facilis alias placeat aliquid perspiciatis libero consequatur saepe dicta aspernatur veniam sed ullam autem ratione voluptas porro, natus quidem quibusdam vel culpa velit nulla! Odio totam quo, rerum asperiores facilis, velit dignissimos, excepturi inventore quia molestias at.</p>
+        </div>
+    </div>
+</body>
+</html>
